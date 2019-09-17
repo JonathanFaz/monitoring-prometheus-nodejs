@@ -52,8 +52,8 @@ app.get('/metrics', (request, response) => {
 });
 
 app.get('/metrics/counter', (req, res) => {
-	res.set('Content-Type', register.contentType);
-	res.end(register.getSingleMetricAsString('test_counter'));
+	res.set('Content-Type', client.register.contentType);
+	res.end(client.register.getSingleMetricAsString('test_counter'));
 }); 
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
