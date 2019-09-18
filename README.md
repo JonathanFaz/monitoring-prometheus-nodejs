@@ -138,3 +138,16 @@ xhrRequest(function(err, res) {
   end(); // Observes the value to xhrRequests duration in seconds
 });
 ```
+
+### Uses cases
+##### Counter 
+For any metric that you want to count: exceptions, status 403, requests etc.
+
+##### Histogram 
+For the latency of the http request and MySQL queries.
+
+##### Gauge
+the same as Counter but this can decrease de counter.
+
+##### Summary 
+Calculates percentiles, a percentile is a proportion of a poblation that falls in some classification.
